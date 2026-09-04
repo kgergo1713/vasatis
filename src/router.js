@@ -13,6 +13,13 @@ if (sitePath === '/') {
   const language = localStorage.getItem('vasatis.language') || 'hu'
   const theme = localStorage.getItem('vasatis.theme') || 'light'
   const text = locales[language]
+  const description = document.querySelector('meta[name="description"]')
+  const canonical = document.querySelector('link[rel="canonical"]')
+  const openGraph = {
+    title: document.querySelector('meta[property="og:title"]'),
+    description: document.querySelector('meta[property="og:description"]'),
+    url: document.querySelector('meta[property="og:url"]')
+  }
   const pageKey = sitePath.split('/').filter(Boolean)[0]
   const pages = {
     maganszemelyeknek: language === 'hu' ? ['Magánszemélyeknek', 'Kerítések, kapuk, korlátok, lépcsők és egyedi fémszerkezetek otthonokhoz.', ['Kerítések és kapuk', 'Korlátok és lépcsők', 'Előtetők és árnyékolók', 'Egyedi fémszerkezetek', 'Bővítések és átalakítások', 'Javítás és karbantartás']] : ['For residents', 'Fences, gates, railings, stairs and bespoke metal structures for homes.', ['Fences and gates', 'Railings and stairs', 'Canopies and shades', 'Bespoke metalwork', 'Extensions and alterations', 'Repairs and maintenance']],
@@ -48,6 +55,15 @@ if (sitePath === '/') {
     ['Does VasAtis undertake occasional gate repairs?', 'We aim to help with repair needs, especially after damage or significant external impact.']
   ]
   const data = pageKey === 'kapcsolat' ? contact : (pages[pageKey] || (language === 'hu' ? ['Az oldal átalakítás alatt', 'Hamarosan elérhető.', []] : ['This page is being migrated', 'Available soon.', []]))
+  const metadata = {
+    maganszemelyeknek: ['Fémipari szolgáltatások magánszemélyeknek | VasAtis Kft.', 'Kerítések, kapuk, korlátok, lépcsők és egyedi fémszerkezetek lakossági kivitelezéshez.'],
+    vallalatoknak: ['Fémipari megoldások vállalatoknak | VasAtis Kft.', 'Egyedi fémipari gyártás és kivitelezés vállalatoknak: ipari szerkezetek, kerítések és korlátok nagy projektekhez.'],
+    projektek: ['Referenciák és fémipari projektek | VasAtis Kft.', 'VasAtis referenciák és elkészült munkák: egyedi kerítések, korlátok és acélszerkezetek lakossági és ipari projektekhez.'],
+    'aluminium-kerites': ['Alumínium kerítés gyártás és kivitelezés | VasAtis Kft.', 'Egyedi alumínium kerítések és kapuk pontos tervezéssel, gyártással és kivitelezéssel.'],
+    'gyakori-kerdesek': ['Gyakori kérdések | VasAtis Kft.', 'Válaszok kapukkal, kerítésekkel és egyedi fémszerkezetekkel kapcsolatos gyakori kérdésekre.'],
+    kapcsolat: ['Kapcsolat, ajánlatkérés és elérhetőség | VasAtis Kft.', 'Vegye fel a kapcsolatot a VasAtis Kft.-vel fémipari műszaki egyeztetéshez és ajánlatkéréshez.'],
+    'adatvedelmi-tajekoztato': ['Adatvédelmi tájékoztató | VasAtis Kft.', 'A VasAtis Kft. személyesadat-kezelésével kapcsolatos tájékoztatás.']
+  }[pageKey] || [data[0], data[1]]
   const referenceImages = [
     'Vasatis_ipari_femszerkezetek_magyar_epitoipar_gyarberendezes_gyartosor.jpg',
     'Vasatis_ipari_lepcso_walkway_magyar_vas_kek_festett_2026.jpg',
@@ -60,7 +76,12 @@ if (sitePath === '/') {
   ]
   document.documentElement.lang = language
   document.documentElement.dataset.theme = theme
-  document.title = `${data[0]} | VasAtis`
+  document.title = metadata[0]
+  description.content = metadata[1]
+  canonical.href = `https://vasatis.com/${pageKey ? `${pageKey}/` : ''}`
+  openGraph.title.content = metadata[0]
+  openGraph.description.content = metadata[1]
+  openGraph.url.content = canonical.href
   const content = pageKey === 'kapcsolat'
     ? `<section class="page-content contact-details"><div><h2>${language === 'hu' ? 'Elérhetőségek' : 'Contact details'}</h2><a href="tel:+36209807743">+36 20 980 7743</a><a href="tel:+36203799048">+36 20 379 9048</a><a href="mailto:vasatis@vasatis.com">vasatis@vasatis.com</a></div><div><h2>${language === 'hu' ? 'Ajánlatkérés' : 'Request a quote'}</h2><p>${text.contact.copy}</p><a class="button" href="mailto:vasatis@vasatis.com?subject=${encodeURIComponent(text.contact.emailSubject)}&body=${text.contact.emailBody}">${text.contact.button}</a></div></section>`
     : pageKey === 'gyakori-kerdesek'

@@ -60,7 +60,8 @@ running `npm run dev`.
 - [x] Add a canonical production URL sitemap.
 - [x] Prevent test deployments from being indexed using `noindex` and `robots.txt`.
 - [x] Add a GitHub Pages fallback for direct legacy route testing.
-- [ ] Recover and implement per-page title, description, canonical, and Open Graph metadata from AIOSEO.
+- [x] Recover and implement per-page title, description, and canonical metadata from AIOSEO.
+- [x] Implement per-page Open Graph metadata.
 - [x] Add `LocalBusiness` structured data.
 - [ ] Verify the final sitemap and robots directives before production deployment.
 - [x] Obtain Google Search Console access and record the index coverage baseline.
@@ -75,7 +76,8 @@ running `npm run dev`.
 - [x] Validate a production build with the GitHub Pages base path.
 - [x] Commit the initial static project to the temporary repository.
 - [x] Push `main` to `https://github.com/kgergo1713/vasatis.git`.
-- [ ] Enable GitHub Actions as the repository Pages source.
+- [x] Enable GitHub Actions as the repository Pages source.
+- [x] Deploy the initial test site to `https://kgergo1713.github.io/vasatis/`.
 - [ ] Test desktop, mobile, internal links, direct URLs, and email links on the deployed Pages URL.
 
 ### Production Handover
