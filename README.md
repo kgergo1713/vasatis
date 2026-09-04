@@ -51,7 +51,7 @@ running `npm run dev`.
 - [ ] Replace remaining short route summaries with the full approved WordPress text.
 - [x] Convert the FAQ into accessible expandable question-and-answer sections.
 - [x] Build the primary reference-project gallery using recovered images and detailed descriptions.
-- [ ] Add the missing detailed content to the aluminium fence page.
+- [x] Add the detailed content to the aluminium fence page.
 - [x] Update the privacy notice structure for email-only contact and the removal of WordPress and Collect.chat.
 - [ ] Obtain client legal approval for the final privacy notice wording.
 - [ ] Confirm all contact details, service areas, references, and customer reviews with the client.
@@ -73,6 +73,7 @@ running `npm run dev`.
 - [x] Preserve the Google Search Console HTML verification file for the production site root.
 - [ ] Export and review Search Console performance data when the Search results report becomes available.
 - [ ] Define one-to-one `301` redirects for any URL that cannot be retained.
+- [x] Define production `301` redirects for the legacy FAQ and homepage aliases.
 
 ### GitHub Pages Test Deployment
 
