@@ -71,6 +71,7 @@ running `npm run dev`.
 ### GitHub Pages Test Deployment
 
 - [x] Add the GitHub Actions Pages workflow.
+- [x] Configure the workflow to enable the repository Pages site automatically.
 - [x] Validate a production build with the GitHub Pages base path.
 - [x] Commit the initial static project to the temporary repository.
 - [x] Push `main` to `https://github.com/kgergo1713/vasatis.git`.
