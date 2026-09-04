@@ -47,7 +47,7 @@ running `npm run dev`.
 - [x] Recover the primary reference-project category structure.
 - [ ] Replace short route summaries with the full approved WordPress text.
 - [x] Convert the FAQ into accessible expandable question-and-answer sections.
-- [x] Build the primary reference-project gallery using recovered images and descriptions.
+- [x] Build the primary reference-project gallery using recovered images and detailed descriptions.
 - [ ] Add the missing detailed content to the aluminium fence page.
 - [x] Update the privacy notice structure for email-only contact and the removal of WordPress and Collect.chat.
 - [ ] Obtain client legal approval for the final privacy notice wording.
