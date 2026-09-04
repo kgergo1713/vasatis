@@ -6,7 +6,7 @@ the database dependency, the contact-form backend, and the chat widget.
 
 ## Project Status
 
-Current version: `0.0.0`
+Current version: `0.1.0`
 
 The local development server is available at `http://localhost:5173/` when
 running `npm run dev`.
@@ -145,7 +145,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Changelog
 
-### 0.0.0
+### 0.1.0
 
 #### New Feature
 
