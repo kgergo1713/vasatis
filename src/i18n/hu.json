@@ -1,0 +1,15 @@
+{
+  "meta": { "title": "VasAtis | F\u00e9mszerkezetek", "description": "Egyedi f\u00e9mszerkezetek lakoss\u00e1gi \u00e9s ipari k\u00f6rnyezetbe." },
+  "navigation": [
+    { "label": "Mag\u00e1nszem\u00e9lyeknek", "href": "/maganszemelyeknek/" },
+    { "label": "V\u00e1llalatoknak", "href": "/vallalatoknak/" },
+    { "label": "Referenci\u00e1k", "href": "/projektek/" },
+    { "label": "Kapcsolat", "href": "#contact" }
+  ],
+  "hero": { "eyebrow": "VasAtis Kft.", "title": "F\u00e9mszerkezetek pontos kivitelben", "intro": "Ker\u00edt\u00e9sek, kapuk \u00e9s egyedi ac\u00e9lszerkezetek lakoss\u00e1gi \u00e9s ipari k\u00f6rnyezetbe.", "quote": "Aj\u00e1nlatk\u00e9r\u00e9s e-mailben", "work": "Munk\u00e1ink", "imageAlt": "VasAtis csapat f\u00e9mszerkezeten dolgozik" },
+  "about": { "eyebrow": "VasAtis", "title": "A f\u00e9m a hivat\u00e1sunk", "copy": "Minden szerkezetet gondosan tervez\u00fcnk \u00e9s prec\u00edzen k\u00e9sz\u00edt\u00fcnk. A tart\u00f3ss\u00e1g, biztons\u00e1g \u00e9s a r\u00e9szletek min\u0151s\u00e9ge minden munk\u00e1nk alapja." },
+  "services": { "title": "Megold\u00e1sok minden ig\u00e9nyre", "details": "R\u00e9szletek", "residential": { "title": "Mag\u00e1nszem\u00e9lyeknek", "copy": "Ker\u00edt\u00e9sek, kapuk, korl\u00e1tok \u00e9s el\u0151tet\u0151k otthonokhoz, egyedi m\u00e9retben.", "imageAlt": "Lakoss\u00e1gi kapu \u00e9s ker\u00edt\u00e9s" }, "industrial": { "title": "V\u00e1llalatoknak", "copy": "Terhelhet\u0151, pontosan illesztett f\u00e9mszerkezetek ipari \u00e9s \u00fczleti felhaszn\u00e1l\u00e1sra.", "imageAlt": "Ipari f\u00e9mker\u00edt\u00e9s" } },
+  "contact": { "eyebrow": "Kapcsolat", "title": "Vegye fel vel\u00fcnk a kapcsolatot", "copy": "K\u00e9rj\u00fck, az e-mailben \u00edrja meg a munka helysz\u00edn\u00e9t, jelleg\u00e9t, hozz\u00e1vet\u0151leges m\u00e9reteit, \u00e9s lehet\u0151s\u00e9g szerint csatoljon fot\u00f3t vagy tervet.", "button": "Aj\u00e1nlatot k\u00e9rek", "emailSubject": "Aj\u00e1nlatk\u00e9r\u00e9s a vasatis.com oldalr\u00f3l", "emailBody": "N\u00e9v:%0ATelefonsz\u00e1m:%0ATelep\u00fcl\u00e9s / munkav\u00e9gz\u00e9s helysz\u00edne:%0AMilyen munk\u00e1ra k\u00e9r aj\u00e1nlatot:%0AHozz\u00e1vet\u0151leges m\u00e9retek:%0AR\u00f6vid le\u00edr\u00e1s:%0AFot\u00f3 vagy terv csatolva:" },
+  "footer": { "summary": "VasAtis Kft. | Professzion\u00e1lis f\u00e9mmegmunk\u00e1l\u00e1s", "address": "2541 L\u00e1batlan, D\u00f3zsa Gy\u00f6rgy \u00fat 63." },
+  "controls": { "language": "Nyelvv\u00e1lt\u00e1s", "theme": "S\u00f6t\u00e9t m\u00f3d v\u00e1lt\u00e1sa" }
+}

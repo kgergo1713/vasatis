@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <script>
+      const base = '/vasatis'
+      const requestedPath = location.pathname.startsWith(base)
+        ? location.pathname.slice(base.length)
+        : location.pathname
+      location.replace(`${base}/?route=${encodeURIComponent(requestedPath)}${location.hash}`)
+    </script>
+  </head>
+  <body></body>
+</html>

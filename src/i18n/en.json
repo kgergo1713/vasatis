@@ -1,0 +1,15 @@
+{
+  "meta": { "title": "VasAtis | Metal structures", "description": "Bespoke metal structures for residential and industrial settings." },
+  "navigation": [
+    { "label": "For residents", "href": "/maganszemelyeknek/" },
+    { "label": "For companies", "href": "/vallalatoknak/" },
+    { "label": "Projects", "href": "/projektek/" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": { "eyebrow": "VasAtis Ltd.", "title": "Metal structures built with precision", "intro": "Fences, gates and bespoke steel structures for residential and industrial settings.", "quote": "Request a quote by email", "work": "Our work", "imageAlt": "The VasAtis team building a metal structure" },
+  "about": { "eyebrow": "VasAtis", "title": "Metalwork is our profession", "copy": "We carefully design and precisely manufacture every structure. Durability, safety and quality in every detail guide all our work." },
+  "services": { "title": "Solutions for every need", "details": "Details", "residential": { "title": "For residents", "copy": "Fences, gates, railings and canopies for homes, made to your exact requirements.", "imageAlt": "Residential gate and fence" }, "industrial": { "title": "For companies", "copy": "Durable, precisely fitted metal structures for industrial and business environments.", "imageAlt": "Industrial metal fence" } },
+  "contact": { "eyebrow": "Contact", "title": "Contact us", "copy": "Please include the site location, scope of work and approximate dimensions in your email. Attach photos or plans where possible.", "button": "Request a quote", "emailSubject": "Quote request from vasatis.com", "emailBody": "Name:%0APhone:%0ALocation:%0AType of work:%0AApproximate dimensions:%0ABrief description:%0APhotos or plans attached:" },
+  "footer": { "summary": "VasAtis Ltd. | Professional metalworking", "address": "2541 Labatlan, Dozsa Gyorgy ut 63., Hungary" },
+  "controls": { "language": "Switch language", "theme": "Toggle dark mode" }
+}
