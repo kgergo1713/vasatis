@@ -93,6 +93,42 @@ if (sitePath === '/') {
     'Solid, decorative steel gate structures with a bespoke appearance for residential entrances.',
     'Stable, compliant fall protection for stairs and level changes, including railings and walkway structures.'
   ]
+  const serviceDetails = {
+    maganszemelyeknek: language === 'hu' ? [
+      'Biztonságos, tartós és esztétikus kerítéseket és kapukat készítünk alumínium- és acélelemekből, az ingatlan adottságaihoz igazítva.',
+      'Erkélyre, lépcsőházba és teraszra gyártott elegáns korlátok, valamint stabil, egyedi lépcsőszerkezetek.',
+      'Időjárásálló előtetők és árnyékolók bejáratokhoz, teraszokhoz és autóbeállókhoz, tartós és esztétikus kivitelben.',
+      'Egyedi méretet vagy különleges illesztést igénylő fémszerkezetek, a helyszín adottságaihoz és az Ön elképzeléseihez tervezve.',
+      'Meglévő fémszerkezetek magasítása, új elemek beépítése, megerősítése vagy teljes korszerűsítése.',
+      'Hegesztési munkák, felújítások és kisebb-nagyobb javítások, hogy szerkezetei biztonságosak és időtállók maradjanak.'
+    ] : [
+      'Safe, durable and aesthetically finished fences and gates in aluminium and steel, designed for the property conditions.',
+      'Elegant railings for balconies, stairwells and terraces, plus stable bespoke stair structures.',
+      'Weather-resistant canopies and shades for entrances, terraces and driveways in a durable, refined finish.',
+      'Bespoke metalwork requiring special dimensions or fitting, designed for the site and your requirements.',
+      'Extensions, reinforcement, new components and full modernisation of existing metal structures.',
+      'Welding, refurbishment and repairs to keep existing structures safe and durable.'
+    ],
+    vallalatoknak: language === 'hu' ? [
+      'Tartós acél- és alumíniumkerítések, valamint biztonsági határoló rendszerek vállalati és ipari környezetbe, kiemelt teherbírással.',
+      'Toló- és nyílókapuk ipari telephelyekre, üzemekhez és logisztikai központokhoz, igény szerint automatizált kivitelben.',
+      'Acél lépcsők, járórácsok, pódiumok és karbantartó platformok biztonságos, csúszásmentes kivitelben.',
+      'Egyedi ipari fémszerkezetek konkrét terhelési és funkcionális követelményekhez igazított tervezéssel és kivitelezéssel.',
+      'Minden szerkezetet az adott telephely, terhelés és funkció alapján tervezünk és valósítunk meg.',
+      'Egyértelmű műszaki tartalommal készülő, korrekt ajánlatok rejtett költségek nélkül.',
+      'Pontosság, precizitás és szervezett kivitelezés a megállapodott ütemezés szerint.',
+      'Acél, alumínium és rozsdamentes megoldások a várható ipari igénybevételhez választva.'
+    ] : [
+      'Durable steel and aluminium fencing plus safety barrier systems for industrial settings and demanding loads.',
+      'Sliding and swing gates for sites, plants and logistics centres, including automated options.',
+      'Steel stairs, grating, platforms and maintenance walkways with safe, non-slip construction.',
+      'Bespoke industrial metal structures designed and delivered for specific load and functional requirements.',
+      'Each structure is designed around the site, load and intended function.',
+      'Clear technical scopes and fair quotations without hidden costs.',
+      'Precise, organised construction delivered to the agreed schedule.',
+      'Steel, aluminium and stainless solutions selected for the expected industrial use.'
+    ]
+  }
   document.documentElement.lang = language
   document.documentElement.dataset.theme = theme
   document.title = metadata[0]
@@ -105,7 +141,7 @@ if (sitePath === '/') {
     ? `<section class="page-content contact-details"><div><h2>${language === 'hu' ? 'Elérhetőségek' : 'Contact details'}</h2><a href="tel:+36209807743">+36 20 980 7743</a><a href="tel:+36203799048">+36 20 379 9048</a><a href="mailto:vasatis@vasatis.com">vasatis@vasatis.com</a></div><div><h2>${language === 'hu' ? 'Ajánlatkérés' : 'Request a quote'}</h2><p>${text.contact.copy}</p><a class="button" href="mailto:vasatis@vasatis.com?subject=${encodeURIComponent(text.contact.emailSubject)}&body=${text.contact.emailBody}">${text.contact.button}</a></div></section>`
     : pageKey === 'gyakori-kerdesek'
       ? `<section class="page-content faq-list">${faqAnswers.map(([question, answer], index) => `<details><summary><span>${String(index + 1).padStart(2, '0')}</span>${question}</summary><p>${answer}</p></details>`).join('')}</section>`
-      : `<section class="page-content page-grid ${pageKey === 'projektek' ? 'project-grid' : ''}">${data[2].map((item, index) => `<article>${pageKey === 'projektek' ? `<img src="/assets/${referenceImages[index]}" alt="${item}">` : ''}<div><p class="eyebrow">0${index + 1}</p><h2>${item}</h2><p>${pageKey === 'projektek' ? referenceDetails[index] : data[1]}</p></div></article>`).join('')}</section>`
+      : `<section class="page-content page-grid ${pageKey === 'projektek' ? 'project-grid' : ''}">${data[2].map((item, index) => `<article>${pageKey === 'projektek' ? `<img src="/assets/${referenceImages[index]}" alt="${item}">` : ''}<div><p class="eyebrow">0${index + 1}</p><h2>${item}</h2><p>${pageKey === 'projektek' ? referenceDetails[index] : (serviceDetails[pageKey]?.[index] || data[1])}</p></div></article>`).join('')}</section>`
   document.querySelector('#app').innerHTML = `<header class="site-header"><a class="brand" href="/" aria-label="VasAtis"><img src="/assets/vasatis-logo.svg" alt="VasAtis"></a><nav>${text.navigation.map((item) => `<a href="${item.href}">${item.label}</a>`).join('')}</nav></header><main><section class="page-hero"><p class="eyebrow">VASATIS KFT.</p><h1>${data[0]}</h1><p>${data[1]}</p></section>${content}</main><footer><p>${text.footer.summary}</p><p>${text.footer.address}</p></footer>`
   document.querySelectorAll('a[href^="/"], img[src^="/assets/"]').forEach((element) => { const attribute = element.tagName === 'IMG' ? 'src' : 'href'; element.setAttribute(attribute, `${import.meta.env.BASE_URL}${element.getAttribute(attribute).slice(1)}`) })
   document.querySelector('.site-header').insertAdjacentHTML('beforeend', `<div class="header-controls"><button class="theme" type="button" aria-label="${text.controls.theme}" title="${text.controls.theme}">${theme === 'light' ? 'D' : 'L'}</button><button class="language" type="button" aria-label="${text.controls.language}">${language === 'hu' ? 'EN' : 'HU'}</button></div>`)

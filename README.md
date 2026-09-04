@@ -45,7 +45,8 @@ running `npm run dev`.
 - [x] Recover the primary service category structure.
 - [x] Recover the full FAQ question list.
 - [x] Recover the primary reference-project category structure.
-- [ ] Replace short route summaries with the full approved WordPress text.
+- [x] Replace primary residential and corporate route summaries with recovered WordPress service descriptions.
+- [ ] Replace remaining short route summaries with the full approved WordPress text.
 - [x] Convert the FAQ into accessible expandable question-and-answer sections.
 - [x] Build the primary reference-project gallery using recovered images and detailed descriptions.
 - [ ] Add the missing detailed content to the aluminium fence page.
