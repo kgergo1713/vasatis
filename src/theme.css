@@ -31,6 +31,15 @@
 .faq-list summary { display: flex; gap: 20px; align-items: baseline; padding: 22px 4px; cursor: pointer; font-family: var(--display); font-size: clamp(23px, 3vw, 32px); font-weight: 600; line-height: 1; text-transform: uppercase; }
 .faq-list summary span { color: var(--red); font-family: var(--body); font-size: 12px; font-weight: 700; }
 .faq-list details p { max-width: 720px; margin: 0; padding: 0 4px 24px 36px; color: var(--slate); line-height: 1.75; }
+.process { padding: 92px max(5vw, 32px); background: var(--white); }
+.process > div, .process > .service-area { max-width: 1180px; margin-left: auto; margin-right: auto; }
+.process h2 { font-size: clamp(38px, 4.5vw, 64px); }
+.process-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 42px; }
+.process-steps article { padding: 34px; border-top: 3px solid var(--red); background: var(--paper); }
+.process-steps span { color: var(--red); font-size: 12px; font-weight: 700; }
+.process-steps h3 { margin: 18px 0 14px; font-size: 32px; }
+.process-steps p, .service-area { color: var(--slate); line-height: 1.7; }
+.service-area { margin-top: 34px; max-width: 760px; }
 
 @media (max-width: 800px) {
   .header-controls { margin-left: auto; }
@@ -38,6 +47,8 @@
   .page-content { padding: 64px 26px; }
   .page-grid, .contact-details { grid-template-columns: 1fr; gap: 20px; }
   .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .process { padding: 64px 26px; }
+  .process-steps { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 420px) {

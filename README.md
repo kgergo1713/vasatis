@@ -48,6 +48,7 @@ running `npm run dev`.
 - [x] Recover the full FAQ question list.
 - [x] Recover the primary reference-project category structure.
 - [x] Replace primary residential and corporate route summaries with recovered WordPress service descriptions.
+- [x] Add the recovered residential workflow and primary service-area content.
 - [ ] Replace remaining short route summaries with the full approved WordPress text.
 - [x] Convert the FAQ into accessible expandable question-and-answer sections.
 - [x] Build the primary reference-project gallery using recovered images and detailed descriptions.
