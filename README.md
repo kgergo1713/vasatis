@@ -19,6 +19,8 @@ running `npm run dev`.
 - Static contact flow using prefilled `mailto:` links to `vasatis@vasatis.com`
 - GitHub Pages deployment workflow in `.github/workflows/deploy-pages.yml`
 - GitHub Pages test builds use the `/vasatis/` base path
+- Cloudflare Pages production builds use the root base path and `public/_redirects`
+    to serve legacy client-side routes.
 
 ## Migration Checklist
 
@@ -60,6 +62,8 @@ running `npm run dev`.
 - [x] Record the Search Console coverage baseline: 11 indexed URLs, 13 existing 404 URLs, 11 discovered-but-not-indexed URLs, and 4 noindex URLs on 2026-09-04.
 - [x] Add a canonical production URL sitemap.
 - [x] Prevent test deployments from being indexed using `noindex` and `robots.txt`.
+- [x] Generate separate crawler rules for the noindex test deployment and indexable production deployment.
+- [x] Add a Cloudflare Pages route fallback for legacy URLs.
 - [x] Add a GitHub Pages fallback for direct legacy route testing.
 - [x] Recover and implement per-page title, description, and canonical metadata from AIOSEO.
 - [x] Implement per-page Open Graph metadata.
