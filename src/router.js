@@ -127,6 +127,19 @@ if (sitePath === '/') {
       'Clear technical scopes and fair quotations without hidden costs.',
       'Precise, organised construction delivered to the agreed schedule.',
       'Steel, aluminium and stainless solutions selected for the expected industrial use.'
+    ],
+    'aluminium-kerites': language === 'hu' ? [
+      'Az alumínium kerítés ideális választás, ha hosszú távú, modern és esztétikus megoldást keres. Időjárásálló, korróziómentes, kevés karbantartást igényel és társasházakhoz is jól alkalmazható.',
+      'Porfestett felületkezeléssel készül, amely ellenáll az UV-sugárzásnak és a szélsőséges időjárásnak. Stabil rögzítési rendszerrel, precíz méretre gyártott elemekkel és egyedi szín- vagy lamellakialakítással dolgozunk.',
+      'Igény szerint toló- vagy nyílókapu, kézi vagy automatizált kivitel is készülhet. Az automatizálás a szerkezethez igazított nyitás- és zárásvezérlést jelenti.',
+      'A kerítés és kapu egységes rendszerként készül. A teljes folyamat helyszíni felmérést, tervezést, gyártást, kiszállítást és telepítést foglalhat magában.',
+      'Az alumínium nem rozsdásodik, könnyű, mégis stabil, hosszú élettartamú és modern megjelenésű. Ezért ideális, tartós választás.'
+    ] : [
+      'Aluminium fencing is ideal for a modern, aesthetic, long-term solution. It is weather-resistant, corrosion-free, low-maintenance and well suited to apartment buildings too.',
+      'Powder-coated finishing resists UV exposure and harsh weather. We use stable fixing systems, precisely made elements, and custom colours or slat arrangements.',
+      'Sliding or swing gates can be manual or automated. Automation provides opening and closing control matched to the structure.',
+      'Fence and gate are made as one coordinated system. Delivery can include survey, design, production, transport and installation.',
+      'Aluminium does not rust, remains light yet stable, has a long service life and a modern appearance, making it a durable long-term choice.'
     ]
   }
   document.documentElement.lang = language
