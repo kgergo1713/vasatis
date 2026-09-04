@@ -64,6 +64,7 @@ running `npm run dev`.
 - [x] Add `LocalBusiness` structured data.
 - [ ] Verify the final sitemap and robots directives before production deployment.
 - [x] Obtain Google Search Console access and record the index coverage baseline.
+- [x] Preserve the Google Search Console HTML verification file for the production site root.
 - [ ] Export and review Search Console performance data when the Search results report becomes available.
 - [ ] Define one-to-one `301` redirects for any URL that cannot be retained.
 
@@ -71,8 +72,8 @@ running `npm run dev`.
 
 - [x] Add the GitHub Actions Pages workflow.
 - [x] Validate a production build with the GitHub Pages base path.
-- [ ] Commit the initial static project to the temporary repository.
-- [ ] Push `main` to `https://github.com/kgergo1713/vasatis.git`.
+- [x] Commit the initial static project to the temporary repository.
+- [x] Push `main` to `https://github.com/kgergo1713/vasatis.git`.
 - [ ] Enable GitHub Actions as the repository Pages source.
 - [ ] Test desktop, mobile, internal links, direct URLs, and email links on the deployed Pages URL.
 
